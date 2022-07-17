@@ -9,6 +9,10 @@
     --border-radius: 30px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Typography */
 
 ::selection {
@@ -77,12 +81,16 @@ p {
     text-decoration: none;
 }
 
+.link__hero {
+    color: var(--color-primary)
+}
+
 .link__primary {
     font-family: 'Tangerine', cursive;
     color: var(--color-primary);
     text-transform: capitalize;
     font-size: 3rem;
-    
+    list-style: none;
 }
 
 .link__primary:hover{
@@ -110,6 +118,53 @@ p {
 
 }
 
+.list__item > a {
+    text-decoration: none;
+}
+
 .list--inline .list__item {
     margin: 2rem;
+}
+
+
+
+.btn {
+    padding: 1rem 2rem;
+    margin: 2rem;
+    display: inline-block;
+
+   
+}
+
+.btn--primary {
+    background: var(--color-body);
+    color: var(--color-primary);
+    font-size: 2rem;
+    border-radius: 30px;
+    outline: 0;
+    border: 1px solid var(--color-body-darker);
+    box-shadow: 0 0 10px 2px var(--color-body);
+    text-align: center;
+}
+
+.btn--primary:hover {
+    background: var(--color-accent);
+    color: #fff;
+    border: 1px solid var(--color-body-darker);
+    transform: scale(1.1);
+    transition: .4s;
+    
+}
+
+.btn__submit, .btn__reset {
+    background: var(--color-secondary);
+    color: var(--color-accent);
+    border-radius: 20px;
+    
+}
+
+.btn__submit:hover, .btn__reset:hover {
+    background: var(--color-accent);
+    color: #fff;
+    border: 1px solid var(--color-body-darker)
 }
