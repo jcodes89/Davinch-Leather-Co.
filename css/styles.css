@@ -1,12 +1,12 @@
 :root {
+    --border-radius: 20px;
+    --color-accent: #bf0000;
+    --color-body-darker: #1f1b1b;
+    --color-body:#383232;
+    --color-border: #ffd9d9;
+    --color-heading:#ffffff;
     --color-primary: #f0ebeb;
     --color-secondary: #d1cfcf;
-    --color-accent: #bf0000;
-    --color-heading:#ffffff;
-    --color-body:#383232;
-    --color-body-darker: #1f1b1b;
-    --color-border: #ffd9d9;
-    --border-radius: 30px;
 }
 
 *, *::before, *::after {
@@ -25,10 +25,10 @@ html {
 }
 
 body {
+    color: var(--color-body);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    color: var(--color-body);
 }
 
 h1, h2, h3 {
@@ -86,18 +86,18 @@ p {
 }
 
 .link__primary {
-    font-family: 'Tangerine', cursive;
     color: var(--color-primary);
-    text-transform: capitalize;
+    font-family: 'Tangerine', cursive;
     font-size: 3rem;
     list-style: none;
+    text-transform: capitalize;
 }
 
 .link__primary:hover{
-    font-size: 4rem;
     color: #bf0000;
-    transition: color .3s;
     cursor: pointer;
+    font-size: 4rem;
+    transition: color .3s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -126,31 +126,29 @@ p {
     margin: 2rem;
 }
 
-
+/* Buttons */
 
 .btn {
-    padding: 1rem 2rem;
-    margin: 2rem;
     display: inline-block;
-
-   
+    margin: 2rem;
+    padding: 1rem 2rem;
 }
 
 .btn--primary {
     background: var(--color-body);
-    color: var(--color-primary);
-    font-size: 2rem;
-    border-radius: 30px;
-    outline: 0;
+    border-radius: var(--border-radius);
     border: 1px solid var(--color-body-darker);
     box-shadow: 0 0 10px 2px var(--color-body);
+    color: var(--color-primary);
+    font-size: 2rem;
+    outline: 0;
     text-align: center;
 }
 
 .btn--primary:hover {
     background: var(--color-accent);
-    color: #fff;
     border: 1px solid var(--color-body-darker);
+    color: #fff;
     transform: scale(1.1);
     transition: .4s;
     
@@ -158,13 +156,34 @@ p {
 
 .btn__submit, .btn__reset {
     background: var(--color-secondary);
+    border-radius: var(--border-radius);
     color: var(--color-accent);
-    border-radius: 20px;
     
 }
 
 .btn__submit:hover, .btn__reset:hover {
     background: var(--color-accent);
-    color: #fff;
     border: 1px solid var(--color-body-darker)
+    color: #fff;
+}
+
+/* Inputs */
+
+.input {
+    margin: 1rem;
+    padding: .5rem 1rem;
+}
+
+.input__form {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-body);
+    color: var(--color-body-darker);
+    outline: var(--color-body);
+    box-shadow: 0 0 10px 2.5px var(--color-body);
+
+}
+
+::placeholder {
+    color: var(--color-body-darke);
 }
