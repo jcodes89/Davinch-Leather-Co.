@@ -47,6 +47,7 @@ h1 {
 h2 {
     font-size: 4rem;
     font-weight: 400;
+    margin-top: 0;
 }
 
 h3 {
@@ -258,4 +259,27 @@ p {
     resize: none;
     overflow: scroll;
 }
-   
+
+/* Collapsibles */
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
