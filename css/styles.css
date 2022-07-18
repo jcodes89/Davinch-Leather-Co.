@@ -36,10 +36,10 @@ h1, h2, h3 {
     color: var(--color-heading);
     margin-bottom: 1rem;
     line-height: 1.1;
+    font-family: 'Tangerine', cursive;
 }
 
 h1 {
-    font-family: 'Tangerine', cursive;
     font-size: 7rem;
     margin-top: 0;
 }
@@ -90,7 +90,6 @@ p {
 .link__primary {
     color: var(--color-primary);
     font-family: 'Tangerine', cursive;
-    font-size: 3rem;
     list-style: none;
     text-transform: capitalize;
 }
@@ -98,8 +97,8 @@ p {
 .link__primary:hover{
     color: #bf0000;
     cursor: pointer;
-    font-size: 4rem;
-    transition: color .3s;
+    font-size: 3rem;
+    transition: font-size .6s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -120,6 +119,11 @@ p {
 
 }
 
+.list__item {
+    text-align: center;
+    border-bottom: 1px solid var(--color-body);
+}
+
 
 .list__item > a {
     text-decoration: none;
@@ -127,8 +131,13 @@ p {
 }
 
 .list--inline, .list__item {
-    margin: 2rem 1rem;
-    margin-top: 0;
+    margin:0 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .list__item {
+        border-bottom: 0;
+    }
 }
 
 /* Buttons */
@@ -271,7 +280,8 @@ p {
 
 .collapsible__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .collapsible__heading {
@@ -289,6 +299,25 @@ p {
 .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+}
+
+@media screen and (min-width: 1024px){
+    .collapsible {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+    .collapsible__content {
+        max-height: 0;
+        overflow: visible;
+        opacity: 1;
+}
+
+    .collapsible--expanded .collapsible__content {
+        opacity: 1;
+}
+
 }
 
 /* block */
@@ -309,4 +338,31 @@ p {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* Navbar */
+
+.nav {
+    background: black;
+}
+
+
+
+.nav__logo {
+    font-size: 4rem;
+}
+
+.nav__logo:hover {
+    font-size: 5rem;
+    color: var(--color-accent);
+    transition: font-size 1s;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px){
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
