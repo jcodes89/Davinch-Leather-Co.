@@ -115,6 +115,7 @@ p {
 .list {
     list-style: none;
     padding-left: 0;
+    margin-top: 0;
 
 }
 
@@ -163,7 +164,7 @@ p {
 
 .btn__submit:hover, .btn__reset:hover {
     background: var(--color-accent);
-    border: 1px solid var(--color-body-darker)
+    border: 1px solid var(--color-body-darker);
     color: #fff;
 }
 
@@ -192,20 +193,20 @@ p {
 
 .card {
     width: 100%;
+    height: 100vh;
 }
-
-
-
-.card__heading {
-    background: var(--color-body-darker);
-    margin-top: 0;
-    text-align: center;
-    font-size: 3rem;
-    color: var(--color-primary);
-}
-
 .card__image {
     object-fit: cover;
     width: 100%;
     height: 50vh;
+}
+
+.card__heading {
+    background: #1f1b1b;
+    margin-top: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 0;
 }
