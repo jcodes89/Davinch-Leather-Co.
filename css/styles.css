@@ -25,7 +25,6 @@ html {
 }
 
 body {
-    color: var(--color-body);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -81,6 +80,7 @@ p {
 
 .link {
     text-decoration: none;
+    color: var(--color-heading);
 }
 
 .link__hero {
@@ -104,10 +104,13 @@ p {
 @media screen and (min-width: 1024px) {
     .link__primary {
         font-size: 2rem;
+        border-bottom: 1px solid var(--color-accent);
     }
 
     .link__primary:hover {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        transition: font-size .8s;
+        border-bottom: none;
     }
 }
 
@@ -277,22 +280,24 @@ p {
 }
 
 /* Collapsibles */
-
+.collapsible {
+    padding: 2rem auto;
+}
 .collapsible__header {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .collapsible__heading {
-    margin-top: 0;
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .collapsible__content {
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
+    overflow: hidden;
     transition: all 0.3s;
 }
 
@@ -303,10 +308,11 @@ p {
 
 @media screen and (min-width: 1024px){
     .collapsible {
+        align-items: center;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-}
+        padding: 1rem;
+    }
 
     .collapsible__content {
         max-height: 0;
@@ -315,6 +321,7 @@ p {
 }
 
     .collapsible--expanded .collapsible__content {
+        max-height: 0;
         opacity: 1;
 }
 
@@ -343,20 +350,28 @@ p {
 /* Navbar */
 
 .nav {
-    background: black;
+    background: var(--color-body-darker);
+    border-bottom: 1px solid var(--color-accent);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-
-
 
 .nav__logo {
     font-size: 4rem;
+    margin-bottom: 0;
 }
 
 .nav__logo:hover {
-    font-size: 5rem;
     color: var(--color-accent);
-    transition: font-size 1s;
     cursor: pointer;
+    font-size: 5rem;
+    transition: font-size .8s ease-out;
+    
+}
+
+.logo {
+    color: var(--color-accent);
 }
 
 @media screen and (min-width: 1024px){
@@ -364,5 +379,13 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+    }
+
+    .nav__logo {
+        border-bottom: 1px solid var(--color-accent);
+    }
+
+    .nav__logo:hover {
+        border-bottom: none;
     }
 }
