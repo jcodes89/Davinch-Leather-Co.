@@ -1,0 +1,47 @@
+<section class="block block--dark container">
+        <header class="block__header">
+            <h2 class="block__heading">The Process</h2>
+        </header>
+        <div class="grid grid--1x2 grid--1x4">
+            <div class="card card--secondary">
+                <h3 class="card__heading">Step one</h3>
+                <p class="card__tagline">Think</p>
+                <img class="card__image" src="/css/images/junior-ferreira-7esRPTt38nI-unsplash.jpg" alt="">
+                <ul class="list list--secondary">
+                    <li class="list__step">Think of the leather good item you would like to create.</li>
+                    <li class="list__step">Think of any special features you would like to add.</li>
+                    <li class="list__step">Use contact form on custom work page to submit a request.</li>
+                </ul>
+            </div>
+            <div class="card card--secondary">
+                <h3 class="card__heading">Step two</h3>
+                <p class="card__tagline">Design</p>
+                <img class="card__image" src="/css/images/kelly-sikkema-fUdTivaXoYs-unsplash.jpg" alt="">
+                <ul class="list list--secondary">
+                    <li class="list__step">The design process begins with a sketch</li>
+                    <li class="list__step">During this time the artisan and the client will be in communication to make sure every detail is perfect.</li>
+                    <li class="list__step">During this process, client is able to customize every aspect of the item.  Including leather type, thread color, edge finish.</li>
+                </ul>
+            </div>
+            <div class="card card--secondary">
+                <h3 class="card__heading">Step three</h3>
+                <p class="card__tagline">Create</p>
+                <img class="card__image" src="/css/images/dane-deaner-JNpmCYZID68-unsplash.jpg" alt="">
+                <ul class="list list--secondary">
+                    <li class="list__step">Artisan now takes previous paper design and cuts out each leather piece by hand.</li>
+                    <li class="list__step">Leather item is meticulously glued together.</li>
+                    <li class="list__step">Once leather good item is glued, an artisan stitches the leather together using a method called saddle stitching.</li>
+                    <li class="list__step">Edge finish is then applied.</li>
+                </ul>
+            </div>
+            <div class="card card--secondary">
+                <h3 class="card__heading">Step four</h3>
+                <p class="card__tagline">Enjoy!</p>
+                <img class="card__image" src="/css/images/alexander-jawfox-WSAwYOR92vc-unsplash.jpg" alt="">
+                <ul class="list list--secondary">
+                    <li class="list__step">Client recieves final product.</li>
+                    <li class="list__step">Time to enjoy your one of a kind custom leather piece.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
