@@ -129,7 +129,7 @@ p {
 }
 
 .list__step {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     list-style-type: circle;
     padding: .5rem;
     color: var(--color-body);
@@ -153,6 +153,10 @@ p {
 @media screen and (min-width: 1024px){
     .list__item {
         border-bottom: 0;
+    }
+
+    .list__step {
+        font-size: 1.4rem;
     }
 }
 
@@ -466,3 +470,4 @@ p {
         font-size: 1.5rem;
     }
 }
+
