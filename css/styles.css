@@ -102,6 +102,17 @@ p {
     transition: font-size .6s;
 }
 
+.link__social {
+    color: var(--color-primary);
+
+}
+
+.link__social:hover {
+    color: white;
+    cursor: pointer;
+    
+}
+
 @media screen and (min-width: 1024px) {
     .link__primary {
         font-size: 2.2rem;
@@ -172,7 +183,7 @@ p {
     background: var(--color-body);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-body-darker);
-    box-shadow: 0 0 10px 2px var(--color-body);
+    box-shadow: 0 0 10px 5px var(--color-body-darker);
     color: var(--color-primary);
     font-size: 1.6rem;
     outline: 0;
@@ -277,6 +288,7 @@ p {
         transform: scale(1.05);
         transition: .8s;
     }
+
 }
 /* Grids */
 
@@ -471,6 +483,59 @@ p {
     }
 }
 
+/* Sidebar Social */
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 75px;
+    width: 40px;
+    
+}
+
+.sidebar__group {
+    background: rgba(0, 0, 0, .7) ;
+    border: 1px solid var(--color-heading);
+    border-radius:0 10px 10px 0;
+}
+
+.sidebar__social {
+    padding: .5rem;
+}
+
+.fa-brands:hover {
+    transform: scale(1.5);
+    transition: ease .7s;
+    color: var(--color-accent);
+}
+
+@media screen and (min-width: 1024px){
+    .sidebar {
+        height: 200px;
+        width: 40px;
+        top: 50vh;
+        transition: top .5s ease-in-out;
+    }
+
+    .sidebar:hover {
+        transform: scale(1.1);
+        transition: ease .6s;
+    }
+
+    .sidebar__social {
+        padding: 1rem;
+    }
+
+    .fa-brands {
+        transform: scale(1.5);
+    }
+
+    .fa-brands:hover {
+        transform: scale(2);
+    }
+}
+
 /* Process block */
 
 .process {
@@ -478,15 +543,26 @@ p {
 }
 
 .footer {
-    margin-top: 5rem;
-    height: 25vh;
+    background: var(--color-body-darker);
+    margin-top: 1rem;
+    height: 100px;
+    width: 100vw;
     text-align: center;
+
+   
+}
+
+.footer-group {
+    margin-top: rem;
+  
+    
 }
 
 .footer__copy {
     font-size: 1.6rem;
     opacity: .5;
     margin-bottom: 0;
+    padding-top: .5rem;
 }
 
 .footer__social {
