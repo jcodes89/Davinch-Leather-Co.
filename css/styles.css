@@ -393,7 +393,6 @@ p {
 .nav {
     background: var(--color-body-darker);
     border-bottom: 1px solid var(--color-accent);
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -442,6 +441,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: 1px solid var(--color-accent);
 }
 
 .hero__header {
@@ -470,4 +470,27 @@ p {
         font-size: 1.5rem;
     }
 }
+
+/* Process block */
+
+.process {
+    height: 100%;
+}
+
+.footer {
+    margin-top: 5rem;
+    height: 25vh;
+    text-align: center;
+}
+
+.footer__copy {
+    font-size: 1.6rem;
+    opacity: .5;
+    margin-bottom: 0;
+}
+
+.footer__social {
+    margin: 3rem;
+}
+
 
