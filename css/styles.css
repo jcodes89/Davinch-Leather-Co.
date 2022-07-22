@@ -313,8 +313,9 @@ p {
 
 .grid {
     display: grid;
-    gap: 3rem;
-    margin: 1.1rem;
+    gap: 1.5rem;
+    margin: 2rem;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px){
@@ -326,6 +327,7 @@ p {
 @media screen and (min-width: 1024px){
     .grid--1x4 {
         grid-template-columns: repeat(4, 1fr);
+        
     }
 }
 
@@ -342,7 +344,7 @@ p {
 
 .form--primary {
     background: var(--color-body-darker);
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     margin: 0;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgb(0, 0, 0);
@@ -426,7 +428,7 @@ p {
 
 .block__heading {
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background: rgba(31, 27, 27, 0.75);
     border-bottom: 1px solid var(--color-accent);
     box-shadow: 0 0 10px 2px var(--color-secondary);
@@ -602,7 +604,7 @@ p {
 
 /* PAGE TWO BEGINS */
 
-/* Gallery */
+/* Custom Work */
 
 .custom {
     display: grid;
@@ -612,8 +614,7 @@ p {
 }
 
 .custom__image {
-    height: 50vh;
-    width: 90vw;
+    width: 100%;
     margin-top: 1rem;
     border-radius: var(--border-radius);
     border: 2px solid white;
@@ -621,15 +622,29 @@ p {
     outline: 0;
 }
 
+/* Gallery */
 
-@media screen and (min-width: 560px){
-    .custom__image {
-        height: 450px;
-        width: 521px;
-        margin: .5rem;
-    }
-    
+.gallery {
+    display: grid;
+    justify-content: center;
+    text-align: center;   
 }
 
+.gallery__image {
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+   border: 2px solid white;
+   box-shadow: 0 0 10px 5px var(--color-body-darker);
+   outline: 0;
+}
+@media screen and (min-width: 1024px){
+    .gallery__image:nth-last-of-type(7) {
+        grid-column: 1/ 5;
+        grid-row: 2/ 3;
+        height: auto;
+       
+    }
 
-
+    
+}    
