@@ -131,6 +131,7 @@ p {
 .list {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
 
 }
 
@@ -142,7 +143,7 @@ p {
 .list__step {
     font-size: 1.3rem;
     list-style-type: circle;
-    padding: .5rem;
+    padding: .2rem ;
     color: var(--color-body);
 }
 
@@ -218,20 +219,36 @@ p {
 .input {
     margin: 1rem;
     padding: .5rem 1rem;
+    
 }
+.input-group {
+    text-align: center;
 
+}
 .input__form {
-    background-color: var(--color-secondary);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--color-body);
-    box-shadow: 0 0 10px 2.5px var(--color-body);
+    width: 100%;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    border: 1px solid var(--color-body-darker);
+    box-shadow: 0 0 10px 5px var(--color-body-darker);
     color: var(--color-body-darker);
     outline: var(--color-body);
-
-
+    margin-left: 0;
 }
 
+@media screen and (min-width: 768px){
+    .input__form {
+        width: 75vw;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .input__form {
+        width: 50vw;
+    }
+}
 ::placeholder {
+    font-size: 1.8rem;
     color: var(--color-body-darker);
     opacity: .6;
 }
@@ -259,7 +276,7 @@ p {
 
 .card__image {
     border-bottom: 2px solid #ffffff;
-    height: 50vh;
+    height: 45vh;
     object-fit: cover;
     width: 100%;
 }
@@ -283,6 +300,8 @@ p {
     font-size: 1.2rem;
 }
 
+
+
 @media screen and (min-width: 1024px){
     .card--secondary:hover {
         transform: scale(1.05);
@@ -294,7 +313,7 @@ p {
 
 .grid {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
     margin: 1.1rem;
 }
 
@@ -314,12 +333,30 @@ p {
 
 .form {
    width: 100%; 
+   height: fit-content;
    margin: 1rem;
+   margin-left: 0;
+   display: grid;
+   justify-content: center;
+}
+
+.form--primary {
+    background: var(--color-body-darker);
+    padding: 1rem 0;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
 }
 
 .form__text-area {
     resize: none;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 1024px){
+    .form {
+        justify-content: center;
+    }
 }
 
 /* Collapsibles */
@@ -532,7 +569,7 @@ p {
     }
 
     .fa-brands:hover {
-        transform: scale(2);
+        transform: scale(1.8);
     }
 }
 
@@ -540,22 +577,16 @@ p {
 
 .process {
     height: 100%;
+    
 }
 
 .footer {
     background: var(--color-body-darker);
+    border-top: 1px solid var(--color-accent);
     margin-top: 1rem;
     height: 100px;
     width: 100vw;
     text-align: center;
-
-   
-}
-
-.footer-group {
-    margin-top: rem;
-  
-    
 }
 
 .footer__copy {
@@ -568,5 +599,37 @@ p {
 .footer__social {
     margin: 3rem;
 }
+
+/* PAGE TWO BEGINS */
+
+/* Gallery */
+
+.custom {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.custom__image {
+    height: 50vh;
+    width: 90vw;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px var(--color-body-darker);
+    outline: 0;
+}
+
+
+@media screen and (min-width: 560px){
+    .custom__image {
+        height: 450px;
+        width: 521px;
+        margin: .5rem;
+    }
+    
+}
+
 
 
