@@ -364,9 +364,7 @@ p {
 }
 
 /* Collapsibles */
-.collapsible {
-    padding: 2rem auto;
-}
+
 .collapsible__header {
     align-items: center;
     display: flex;
@@ -523,7 +521,7 @@ p {
 
 .hero__tagline {
     font-size: 1.4rem;
-    margin-bottom: 1;
+    margin-bottom: 1px;
 }
 
 @media screen and (min-width: 1024px){
@@ -638,6 +636,8 @@ p {
     width: 100%;
 }
 
+/* PAGE THREE BEGINS */
+
 /* Gallery */
 
 .gallery {
@@ -664,15 +664,17 @@ p {
     }
 }   
 
+/* PAGE THREE BEGINS */
+
 /* About Us */
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .7);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about__heading {
@@ -681,24 +683,23 @@ p {
 
 
 .about__image {
-    
-    object-fit: cover;
-    justify-content: center;
-    height: auto;
-    width: 80vw;
-    border: 1px solid var(--color-primary);
     border-radius: 50%;
+    border: 1px solid var(--color-primary);
     box-shadow: 0 0 10px 5px black;
-    margin: .5rem;   
+    height: auto;
+    justify-content: center;
     margin-bottom: 0; 
+    margin: .5rem;   
+    object-fit: cover;
+    width: 80vw;
     
 }
 
 .tagline-group {
-    color: var(--color-primary);
-    justify-content: center;
-    font-size: 1.6rem;
     border-top: 1px solid red;
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    justify-content: center;
     margin: 1rem;
     text-indent: 5%;
 }
@@ -716,8 +717,8 @@ p {
 
 @media screen and (min-width: 1024px){
     .about {
-        position: relative;
         left: 130px;
+        position: relative;
         width: 80%;
     }
 
