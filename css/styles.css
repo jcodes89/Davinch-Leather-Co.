@@ -494,6 +494,15 @@ p {
     color: var(--color-primary);
 }
 
+.block--image {
+    height: 100%;
+    width: 100%;
+    background: url(/css/images/gallery-page-webp/card.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .block__header {
     text-align: center;
     
