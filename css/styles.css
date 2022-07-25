@@ -494,18 +494,6 @@ p {
     color: var(--color-primary);
 }
 
-.block--image {
-    background: url(/css/images/card-red.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
 .block__header {
     text-align: center;
     
