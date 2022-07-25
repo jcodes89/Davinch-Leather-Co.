@@ -20,78 +20,112 @@
     <script src="https://kit.fontawesome.com/5c59429581.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="collapsible collapsible--expanded">
-                <div class="nav__header collapsible__header">
-                    <h1 class="nav__logo"><span class="logo">D</span>avinch Leather Co.</h1>
-                </div>
-                <div class="collapsible__content">
-                    <ul class="list list--inline nav__list">
-                        <li class="list__item"><a class="link link__primary" href="/index.html">Home Page</a></li>
-                        <li class="list__item"><a class="link link__primary" href="/custom.html">Custom Work</a></li>
-                        <li class="list__item"><a class="link link__primary" href="/gallery.html">Gallery</a></li>
-                        <li class="list__item"><a class="link link__primary" href="/about.html">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="sidebar">
-        <ul class="list sidebar__group">
-            <li class="sidebar__social icon icon-ig"><a class="link link__social" target="_blank" href="https://www.instagram.com/davinchleatherco/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="sidebar__social icon icon-fb"><a class="link link__social" target="_blank" href="https://www.facebook.com/davinchleatherco/"><i class="fa-brands fa-facebook"></i></a></li>
-        </ul>
+    <div class="loader">
+        <div class="loader-group">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+        </div>
     </div>
-    <section class="block container block--dark process">
-        <header class="block__header">
-            <h2 class="block__heading">Custom Work Form</h2>
+    <div class="content">
+        <header>
+            <nav class="nav">
+                <div class="collapsible collapsible--expanded">
+                    <div class="nav__header collapsible__header">
+                        <h1 class="nav__logo"><span class="logo">D</span>avinch Leather Co.</h1>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul class="list list--inline nav__list">
+                            <li class="list__item"><a class="link link__primary" href="/index.html">Home Page</a></li>
+                            <li class="list__item"><a class="link link__primary" href="/custom.html">Custom Work</a></li>
+                            <li class="list__item"><a class="link link__primary" href="/gallery.html">Gallery</a></li>
+                            <li class="list__item"><a class="link link__primary" href="/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <div class="grid">
-            <form class="form form--primary" action="https://formspree.io/f/xrgjwbke" method="post">
-                <div class="input-group">
-                    <input class="input input__form" type="text" placeholder="Name" id="name" name="name" required minlength="3" maxlength="50">
-                </div>  
-                <div class="input-group"> 
-                    <input class="input input__form" type="email" placeholder="Email" name="email" required minlength="5" maxlength="200">
-                </div>
-                <div class="input-group">
-                    <textarea class="input input__form form__text-area" name="description" cols="25" rows="10" required placeholder="Please describe the custom leather good item you wish to create..." minlength="5" maxlength="500"></textarea>
-                </div>
-                <div class="input-group">
-                    <button class="btn btn--primary btn__submit" type="submit">Submit</button>
-                    <button class="btn btn--primary btn__reset" type="reset">Clear</button>       
-                </div>
-            </form>
+        <div class="sidebar">
+            <ul class="list sidebar__group">
+                <li class="sidebar__social icon icon-ig"><a class="link link__social" target="_blank" href="https://www.instagram.com/davinchleatherco/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="sidebar__social icon icon-fb"><a class="link link__social" target="_blank" href="https://www.facebook.com/davinchleatherco/"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
         </div>
-    </section>   
-         <main class="custom">
-            <div class="grid grid--1x2">
-                <div class="custom-group">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/holster.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/lizard-clutch.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/watch.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/money-clip.webp" alt="">
-
+        <section class="block container block--dark process">
+            <header class="block__header">
+                <h2 class="block__heading">Custom Work Form</h2>
+            </header>
+            <div class="grid">
+                <form class="form form--primary" action="https://formspree.io/f/xrgjwbke" method="post">
+                    <div class="input-group">
+                        <input class="input input__form" type="text" placeholder="Name" id="name" name="name" required minlength="3" maxlength="50">
+                    </div>  
+                    <div class="input-group"> 
+                        <input class="input input__form" type="email" placeholder="Email" name="email" required minlength="5" maxlength="200">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input input__form form__text-area" name="description" cols="25" rows="10" required placeholder="Please describe the custom leather good item you wish to create..." minlength="5" maxlength="500"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button class="btn btn--primary btn__submit" type="submit">Submit</button>
+                        <button class="btn btn--primary btn__reset" type="reset">Clear</button>       
+                    </div>
+                </form>
+            </div>
+        </section>   
+             <main class="custom">
+                <div class="grid grid--1x2">
+                    <div class="custom-group">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/holster.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/lizard-clutch.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/watch.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/money-clip.webp" alt="">
+    
+                    </div>
+                    <div class="custom-group">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/brown-wallet.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/passport.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/epi-clutch.webp" alt="">
+                        <img class="custom__image" src="/css/images/custom-page/custom-page-webp/range-bag.webp" alt="">
+                    </div>
                 </div>
-                <div class="custom-group">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/brown-wallet.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/passport.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/epi-clutch.webp" alt="">
-                    <img class="custom__image" src="/css/images/custom-page/custom-page-webp/range-bag.webp" alt="">
+            </main>
+        <footer class="block block--dark container footer">
+            <div class="footer-group">
+                <div class="footer__header">
+                    <p class="footer__copy">Copyright &copy; Davinch Leather Co. 2016</p>
+                    <p class="footer__copy">Tampa, Fl 33611</p>
                 </div>
             </div>
-        </main>
-    <footer class="block block--dark container footer">
-        <div class="footer-group">
-            <div class="footer__header">
-                <p class="footer__copy">Copyright &copy; Davinch Leather Co. 2016</p>
-                <p class="footer__copy">Tampa, Fl 33611</p>
-            </div>
-        </div>
-    </footer>
-    <script src="/main.js"></script>
+        </footer>
+        <script src="/main.js"></script>
+    </div>
+    <script>
+        $(window).on('load',function(){
+            $('.loader').fadeOut(1000);
+            $('.content').fadeIn(1000);
+        });
+    </script>
 </body>
 </html>
