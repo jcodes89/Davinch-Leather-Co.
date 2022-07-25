@@ -194,6 +194,7 @@ p {
 .btn--primary:hover {
     background: var(--color-accent);
     border: 1px solid var(--color-body-darker);
+    box-shadow: 0 0 7px 2px var(--color-primary);
     color: #fff;
     transform: scale(1.1);
     transition: .4s;
@@ -287,8 +288,7 @@ p {
     border-bottom: 2px solid #ffffff;
     border-radius: 20px 20px 0 0;
     color: var(--color-primary);
-    font-size: 3rem;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0;
     margin-top: 0;
     text-align: center;
@@ -296,19 +296,26 @@ p {
 
 .card__tagline {
     background: var(--color-body-darker);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
 }
-
 
 
 @media screen and (min-width: 1024px){
     .card--secondary:hover {
         transform: scale(1.05);
-        transition: .8s;
+        transition: .5s;
     }
 
+}
+
+@media screen and (orientation:landscape) {
+    .card {
+        height: 100%;
+        width: 100%;
+    }
 }
 /* Grids */
 
@@ -466,14 +473,6 @@ p {
     margin-bottom: 0;
 }
 
-.nav__logo:hover {
-    color: var(--color-accent);
-    cursor: pointer;
-    font-size: 4.4rem;
-    transition: font-size .8s ease-out;
-    
-}
-
 .logo {
     color: var(--color-accent);
 }
@@ -483,10 +482,6 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-    }
-
-    .nav__logo {
-        border-bottom: 1px solid var(--color-accent);
     }
 
     .nav__logo:hover {
@@ -541,10 +536,8 @@ p {
     height: 75px;
     left: 0;
     position: fixed;
-    top: 50vh;
+    top: 40vh;
     width: 40px;
-    
-    
 }
 
 .sidebar__group {
@@ -603,13 +596,14 @@ p {
     height: 100px;
     text-align: center;
     width: 100vw;
+    padding-top: 4rem;
 }
 
 .footer__copy {
     font-size: 1.6rem;
     margin-bottom: 0;
     opacity: .5;
-    padding-top: .5rem;
+    margin-top: 0;
 }
 
 .footer__social {
@@ -656,9 +650,9 @@ p {
 }
 
 @media screen and (min-width: 1024px){
-    .gallery__image:nth-last-of-type(12) {
+    .gallery__image:nth-last-of-type(7) {
         grid-column: 2/ 5;
-        grid-row: 2/ 4;
+        grid-row: 1/ 3;
         height: auto;
        
     }
