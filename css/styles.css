@@ -700,6 +700,7 @@ p {
     display: grid;
     justify-content: center;
     text-align: center;   
+    width: 100%;
 }
 
 .gallery__image {
@@ -707,8 +708,8 @@ p {
    border: 2px solid white;
    box-shadow: 0 0 10px 5px var(--color-body-darker);
    height: 100%;
-   outline: 0;
    width: 100%;
+   outline: 0;
 }
 
 @media screen and (min-width: 1024px){
@@ -783,6 +784,6 @@ p {
     }
 
     .tagline-group {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
